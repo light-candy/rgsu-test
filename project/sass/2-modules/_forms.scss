@@ -1,0 +1,31 @@
+.forms{
+    background:#ffffff;
+    width:max-content;
+    border:1px solid #ffffff;
+    border-radius:4px;
+    box-shadow:0 -21px 0 -9px rgba(255, 255, 255, 0.8), 0 -38px 0 -14px rgba(255, 255, 255, 0.6);
+}
+
+input[type="submit"]{
+    @include typo-1;
+    border-radius:4px;
+    background:$blue;
+    color:#ffffff;
+    border:1px solid $blue;
+    padding:0.5em 1em 0.5em 1em;
+    width:auto;
+    margin:0;
+    cursor:pointer;
+    &:hover{
+        filter:drop-shadow(1px 1px 1px #333333);
+        border:1px solid $blue;
+    }
+    &:active{
+       filter:drop-shadow(1px 1px 1px #333333);
+        border:1px solid $blue;
+    }
+    &:focus{
+        filter:drop-shadow(1px 1px 1px #333333);
+        border:1px solid $blue;
+    }
+}

@@ -1,0 +1,46 @@
+.tabs{
+    background-color:#ffffff;
+    padding-top:39px;
+    padding-bottom:29px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.tabs__tablink{
+    @include typo-2;
+    background:#ffffff;
+    border:none;
+    cursor:pointer;
+}
+
+.tabs__tablink[aria-selected="false"]{
+    color:#c3cad6;
+     &:hover{
+        color:$light-blue;
+        border:none;
+    }
+    &:active{
+        color:$light-blue;
+        border:none;
+    }
+    &:focus{
+        color:$light-blue;
+        border:none;
+    }
+}
+.tabs__tablink[aria-selected="true"]{
+    color:$blue;
+     &:hover{
+        color:$blue;
+        border:none;
+    }
+    &:active{
+        color:$blue;
+        border:none;
+    }
+    &:focus{
+        color:$blue;
+        border:none;
+    }
+
+}

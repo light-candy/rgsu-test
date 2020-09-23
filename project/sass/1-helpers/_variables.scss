@@ -1,0 +1,28 @@
+$blue: #3464e0;
+$dark-blue: #1740aa;
+$light-blue: #9cbaf0;
+$grey: #c3cad6;
+
+$viewport-7:768px;
+$viewport-9:992px;
+
+@mixin typo-1 {
+    font-size:16px;
+    line-height:26px;
+}
+@mixin typo-2 {
+    font-size:26px;
+    line-height:26px;
+}
+@mixin typo-3{
+    font-size:18px;
+    line-height:21px;
+}
+@mixin typo-4{
+   font-size:14px;
+   line-height:16px;
+}
+@mixin error-typo{
+    color:#e06364;
+    font-size:12px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.min.css">
+
+    <title>Портал НПР РГСУ</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__logo-box">
+        <a class="nav__logo-link" href="#" title="Портал НПР РГСУ">
+          <img src="svg/logo.svg">
+          <span>Портал НПР РГСУ</span>
+        </a>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#" title="Портал НПР РГСУ - Новости">Новости</a></li>
+        <li class="nav__item"><a class="nav__link" href="#" title="Портал НПР РГСУ - Преподаватели" aria-selected="true">Преподаватели</a></li>
+        <li class="nav__item"><a class="nav__link" href="#" title="Портал НПР РГСУ - Вакансии" >Вакансии</a></li>
+        <li class="nav__item"><a class="nav__link" href="#" title="Портал НПР РГСУ - Объявления">Объявления</a></li>
+        <li class="nav__item"><a class="nav__link" href="#" title="Портал НПР РГСУ - Мероприятия">Мероприятия</a></li>
+      </ul>
+    <a class="button-lk" href="#" title="Портал НПР РГСУ - Личный кабинет"><img class="button-lk__icon" src="svg/logout.svg">Войти на сайт</a>
+    </nav>
+    <main class="main">
+    <div class="forms">
+      <div class="tabs">
+        <button class="tabs__tablink" id="tab-1" aria-selected="true" title="К форме авторизации">Авторизация</button>
+        <button class="tabs__tablink" id="tab-2" aria-selected="false" title="К форме регистрации">Регистрация</button>
+      </div>
+      <div class="tabs__panel" aria-labelledby="tab-1">
+      <form id="formAuth" class="form_auth" action="">
+        <label class="form__label_required" for="user_email">Ваш email </label><br><input name="user_email" type="email" id="user_email" placeholder="Укажите адрес электронной почты"/>
+        <label class="form__label_required" for="user_password">Введите пароль </label><br><input name="user_password" type="password" id="user_password" placeholder="*****"/>
+        <div class="form__controls_auth">
+          <input class="form__button_submit" name="auth" type="submit" title="Добавить запись" value="Добавить запись"/>
+          <a class="form__link" href="#" title="К странице восстановления пароля">Забыли пароль?</a>
+        </div>
+      </form>
+      </div>
+      <div class="tabs__panel" aria-labelledby="tab-2" hidden>
+      <form  id="formRegistr" class="form_registr" action="">
+        <div class="form__inputs-box">
+          <div>
+            <label class="form__label_required" for="new_fio">ФИО </label><br><input name="new_fio" type="text" id="new_fio" placeholder="Фамилия Имя Отчество"/>
+            </div>
+          </div>
+        <div class="form__inputs-box">
+          <div>
+            <label  class="form__label_required" for="new_email">Email </label><br><input name="new_email" type="email" id="new_email" placeholder="Адрес будет логином на портале"/>
+          </div>
+          <div>
+            <label  class="form__label_required" for="new_phone">Телефон </label><br><input name="new_phone" type="tel" id="new_phone" />
+            </div>
+                 </div>
+        <div class="form__inputs-box">
+          <div>
+            <label  class="form__label_required" for="new_snils">СНИЛС </label><br><input name="new_snils" type="text" id="new_snils" />
+            </div>
+<div>
+  <label class="form__label_required" for="new_birth">Дата рождения </label><br><input name="new_birth" type="date" id="new_birth" placeholder="__.__.____" />
+  </div>
+        </div>
+        <p class="form__checkbox-item">
+          <input name="agree_data" type="checkbox" id="agree_data" value="agree_data"/>
+          <span class="form__checkmark"></span>
+          <label   class="form__label_required" for="agree_data">Согласен на обработку моих персональных данных </label>
+        </p>
+        <p class="form__checkbox-item">
+          <input name="agree_mail" type="checkbox" id="agree_mail" value="agree_mail"/>
+          <span class="form__checkmark"></span>
+          <label  class="form__label_required" for="agree_mail">Согласен на получение уведомлений и рассылок </label>
+        </p>
+        <div class="form__controls_registr">
+          <input class="form__button_submit" name="register" type="submit" value="Зарегистрироваться" title="Зарегистрироваться" />
+          <button class="form__button_cancel" id="cancel" title="Очистить форму">Отказаться</button>
+        </div>
+      </form>
+      </div>
+    </div>
+</main>
+  </body>
+  <script type="application/javascript" src="js/rgsu.min.js"></script>
+  <script type="application/javascript" src="js/jquery.inputmask.js"></script>`
+  <script type="application/javascript" src="js/inputmasks.js"></script>
+</html>

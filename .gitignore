@@ -1,0 +1,6 @@
+.DS_Store
+.idea
+*.log
+tmp/
+
+/dev-gulp/node_modules/
